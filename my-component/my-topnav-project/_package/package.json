@@ -1,9 +1,8 @@
 {
-  "name": "topnav",
+  "name": "my-topnav-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "src/TopNav.tsx",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,16 +11,14 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "tailwindcss": "^4.1.16"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@tailwindcss/vite": "^4.1.17",
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.1.0",
+    "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
@@ -35,16 +32,16 @@
     "files": {
       "template": {
         "type": "oc-template-react",
-        "hashKey": "f6a7fc4eb11dae2f1f052f48ed1c439f987125b9",
+        "hashKey": "49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf",
         "src": "template.js",
         "version": "4.2.0",
         "minOcVersion": "0.50.18",
-        "size": 9805
+        "size": 10321
       },
       "static": []
     },
     "version": "0.50.39",
     "packaged": true,
-    "date": 1762419401159
+    "date": 1762421134072
   }
 }

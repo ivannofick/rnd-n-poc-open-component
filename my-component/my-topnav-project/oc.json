@@ -1,0 +1,10 @@
+{
+    "name": "my-topnav",
+    "version": "1.0.0",
+    "components": [
+        {
+            "name": "TopNav",
+            "path": "src/components/TopNav.tsx"
+        }
+    ]
+}

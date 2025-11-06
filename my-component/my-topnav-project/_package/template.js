@@ -1,4 +1,4 @@
-var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f052f48ed1c439f987125b9']=function(model) {
+var oc=oc||{};oc.components=oc.components||{};oc.components['49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf']=function(model) {
            var __toOcStaticPathUrl = function(args) {
              return model.component.props._staticPath + 'undefined/' + args;
            } 
@@ -28,7 +28,7 @@ var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f0
            var __$$oc_Settings__ = {id: model.id, element: element, staticPath: _staticPath, baseUrl: _baseUrl, name: _componentName, version: _componentVersion};
            var innerFn = function(model){
   oc.reactComponents = oc.reactComponents || {};
-  oc.reactComponents['f6a7fc4eb11dae2f1f052f48ed1c439f987125b9'] = (
+  oc.reactComponents['49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf'] = (
            (function() {
             var clientBundle = (function(require$$1, client) {
   "use strict";
@@ -82,9 +82,13 @@ var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f0
   }
   var jsxRuntimeExports = requireJsxRuntime();
   const TopNav = () => {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "bg-blue-500 p-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between items-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/", className: "text-white", children: "Home" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/about", className: "text-white", children: "About" })
+    return /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "bg-blue-500 p-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-white", children: "My App" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "flex space-x-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#", className: "text-white", children: "Home" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#", className: "text-white", children: "About" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#", className: "text-white", children: "Contact" }) })
+      ] })
     ] }) });
   };
   var useData = {};
@@ -200,7 +204,7 @@ var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f0
   var staticPath = model.component.props._staticPath;
   if (ssr) {
     externals.push({
-      global: ['oc', 'components', 'f6a7fc4eb11dae2f1f052f48ed1c439f987125b9'],
+      global: ['oc', 'components', '49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf'],
       url: staticPath + 'template.js',
       name: "template"
     });
@@ -211,11 +215,11 @@ var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f0
   oc.__data = oc.__data || {};
   oc.__data[model.id] = model.component.props;
   var count = oc.__reactTemplate.count;
-  var templateId = "oc-reactRoot-topnav-" + count;
+  var templateId = "oc-reactRoot-my-topnav-project-" + count;
   oc.__reactTemplate.count++;
-  var ssrCall = 'oc.components["f6a7fc4eb11dae2f1f052f48ed1c439f987125b9"]({ id: "' + model.id + '", component: { props:' + props + ' } });';
+  var ssrCall = 'oc.components["49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf"]({ id: "' + model.id + '", component: { props:' + props + ' } });';
 
-  return '<div id="' + templateId + '" class="oc-reactRoot-topnav">' + modelHTML + '</div>' +
+  return '<div id="' + templateId + '" class="oc-reactRoot-my-topnav-project">' + modelHTML + '</div>' +
     '' +
     '<script>' +
     'oc = oc || {};' +
@@ -226,8 +230,8 @@ var oc=oc||{};oc.components=oc.components||{};oc.components['f6a7fc4eb11dae2f1f0
         'var targetNode = document.getElementById("' + templateId + '");' +
         'targetNode.setAttribute("id","");' +
         (ssr ? ssrCall : '') +
-        'oc.components["f6a7fc4eb11dae2f1f052f48ed1c439f987125b9"]({ id: "' + model.id + '", component: { props: oc.__data["' + model.id + '"]} });' +
-        'oc.reactComponents["f6a7fc4eb11dae2f1f052f48ed1c439f987125b9"](oc.__data["' + model.id + '"], targetNode, ' + !!modelHTML  + ');' +
+        'oc.components["49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf"]({ id: "' + model.id + '", component: { props: oc.__data["' + model.id + '"]} });' +
+        'oc.reactComponents["49b79c7bfeb60c4033b3e35ec6ba72ba8ccd9bcf"](oc.__data["' + model.id + '"], targetNode, ' + !!modelHTML  + ');' +
       '});' +
     '});' +
   '</script>'
