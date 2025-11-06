@@ -3,19 +3,41 @@ import { useEffect, useRef } from 'react';
 import oc from 'oc-client-browser';
 
 export default function OCHelloWorld() {
-    const ref = useRef(null);
+    const ref = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const client = oc({
-            registries: { clientRendering: 'http://localhost:3030/' }
-        });
+        // Ambil library OC dari registries
+        oc.getLibs().then((libs) => {
+            const lib = libs.dev;  // Ambil library untuk dev (atau prod sesuai kebutuhan)
 
-        client.renderComponent('hello-world', { name: 'Ivan' }, (err: any, html: any) => {
-            if (err) {
-                ref.current.innerHTML = `<p style="color:red">OC Error: ${err.message}</p>`;
-            } else {
-                ref.current.innerHTML = html;
-            }
+            // Load library OC ke dalam DOM (misalnya dengan <script> tag)
+            const script = document.createElement('script');
+            script.src = lib;
+            script.onload = () => {
+                // Pastikan window.oc sudah ada sebelum menggunakannya
+                if (window) {
+                    if (window?.oc) {
+                        // Sekarang kita bisa panggil komponen OC
+                        window.oc.renderComponent(
+                            'hello-world',  // Nama komponen OC yang ingin di-render
+                            { name: 'Ivan' },  // Parameter untuk komponen
+                            (err: any, html: any) => { // Callback untuk hasil render
+                                if (err) {
+                                    ref.current!.innerHTML = `<p style="color:red">OC Error: ${err.message}</p>`;
+                                } else {
+                                    ref.current!.innerHTML = html;
+                                }
+                            }
+                        );
+                    } else {
+                        ref.current!.innerHTML = '<p style="color:red">OC not loaded properly.</p>';
+                    }
+                    
+                }
+            };
+            document.body.appendChild(script);
+        }).catch((err) => {
+            ref.current!.innerHTML = `<p style="color:red">Error loading OC library: ${err.message}</p>`;
         });
     }, []);
 
