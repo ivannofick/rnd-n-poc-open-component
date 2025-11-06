@@ -9,9 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "handlebars": "^4.7.7",
     "next": "16.0.1",
-    "oc-client-browser": "^2.1.10",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
