@@ -1,0 +1,21 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "My first OC component",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "example": "Ivan",
+            "default": "Anonymous"
+        }
+    },
+    "oc": {
+        "files": {
+            "data": "server.js",
+            "template": {
+                "type": "handlebars",
+                "hashKey": "123456"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "description": "My first OpenComponent",
+    "repository": "",
+    "license": "MIT",
+    "main": "server.js",
+    "oc": {
+        "files": {
+            "template": {
+                "type": "handlebars",
+                "src": "template.html"
+            },
+            "data": "server.js"
+        },
+        "parameters": {
+            "name": {
+                "type": "string",
+                "example": "Ivan"
+            }
+        }
+    }
+}

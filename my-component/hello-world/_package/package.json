@@ -1,0 +1,35 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "My first OpenComponent",
+  "repository": "",
+  "license": "MIT",
+  "main": "server.js",
+  "oc": {
+    "files": {
+      "template": {
+        "type": "handlebars",
+        "hashKey": "cb4157281c163d2053b9f61afcef0b6ed2d36f75",
+        "src": "template.js",
+        "version": "6.0.25",
+        "size": 595
+      },
+      "dataProvider": {
+        "type": "node.js",
+        "hashKey": "f36652e89436464b00bbc9403882c2d319a057a1",
+        "src": "server.js",
+        "size": 1761
+      },
+      "static": []
+    },
+    "parameters": {
+      "name": {
+        "type": "string",
+        "example": "Ivan"
+      }
+    },
+    "version": "0.50.39",
+    "packaged": true,
+    "date": 1762403476041
+  }
+}

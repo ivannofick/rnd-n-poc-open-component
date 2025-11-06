@@ -1,0 +1,17 @@
+{
+  "name": "my-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd hello-world && oc package .", 
+    "dev": "oc registry . && oc dev . 3030"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "oc-template-es6-compiler": "8.0.0"
+  }
+}
