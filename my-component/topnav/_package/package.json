@@ -34,9 +34,17 @@
   "oc": {
     "files": {
       "template": {
-        "src": "src/TopNav.tsx",
-        "type": "oc-template-react"
-      }
-    }
+        "type": "oc-template-react",
+        "hashKey": "f6a7fc4eb11dae2f1f052f48ed1c439f987125b9",
+        "src": "template.js",
+        "version": "4.2.0",
+        "minOcVersion": "0.50.18",
+        "size": 9805
+      },
+      "static": []
+    },
+    "version": "0.50.39",
+    "packaged": true,
+    "date": 1762419401159
   }
 }

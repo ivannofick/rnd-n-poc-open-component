@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd hello-world && oc package .", 
-    "dev": "oc registry . && oc dev . 3030"
+    "build": "cd hello-world && oc package .",
+    "dev": "oc registry . && oc dev . 3030",
+    "buildtopnav": "cd topnav && oc package . --verbose",
+    "devtopnav": "oc registry . && oc dev . 3030"
   },
   "keywords": [],
   "author": "",

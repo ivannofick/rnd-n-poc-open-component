@@ -1,0 +1,14 @@
+{
+    "component": {
+        "name": "topnav",
+        "version": "1.0.0"
+    },
+    "oc": {
+        "files": {
+            "template": {
+                "src": "src/TopNav.tsx",
+                "type": "oc-template-react"
+            }
+        }
+    }
+}
