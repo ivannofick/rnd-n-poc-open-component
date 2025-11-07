@@ -1,0 +1,14 @@
+{
+  "name": "oc-registry",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "oc": "^0.50.39"
+  }
+}

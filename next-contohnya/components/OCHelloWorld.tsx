@@ -7,7 +7,8 @@ const OCComponentExample = () => {
     useEffect(() => {
         const loadOCComponent = async () => {
             try {
-                const response = await fetch('http://localhost:3030/hello-world');
+                // http://localhost:3030/topnav/1.0.0/
+                const response = await fetch('http://localhost:3030/bottomnav');
                 const data = await response.json(); // Ambil data JSON
                 setComponentHTML(data.html);
             } catch (error) {

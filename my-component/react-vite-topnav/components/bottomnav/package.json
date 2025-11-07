@@ -1,0 +1,23 @@
+{
+    "name": "bottomnav",
+    "version": "1.0.0",
+    "description": "Bottomnav navigation component",
+    "oc": {
+        "files": {
+            "template": {
+                "src": "src/App.tsx",
+                "type": "oc-template-react"
+            },
+            "data": "server.ts"
+        }
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-router-dom": "^7.9.5"
+    },
+    "devDependencies": {
+        "oc-template-react": "^4.2.0",
+        "oc-template-react-compiler": "^11.0.0"
+    }
+}
